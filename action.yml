@@ -1,10 +1,15 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'event notice'
+author: 'tinxulai@hotmail.com'
+description: '帮助开发者将 github 的事件信息推送到其他平台'
+
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  channel:              # change this
+    description: '推送的渠道，可选有：wechat-work-bot（微信企业机器人）'
+    default: 'wechat-work-bot'
+  message:
+    description: '设置消息需要包含的内容'
+    default: 'wechat-work-bot'
+
 runs:
   using: 'node12'
   main: 'dist/index.js'
