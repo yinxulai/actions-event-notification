@@ -3,12 +3,12 @@ author: 'tinxulai@hotmail.com'
 description: '帮助开发者将 github 的事件信息推送到其他平台'
 
 inputs:
-  channel:              # change this
-    description: '推送的渠道，可选有：wechat-work-bot（微信企业机器人）'
+  channel:
+    description: '推送的渠道，可选有：wechat-work-bot（微信企业机器人）(考虑支持 slack)'
     default: 'wechat-work-bot'
-  message:
+  content:
     description: '设置消息需要包含的内容'
-    default: 'wechat-work-bot'
+    default: 'null'
 
 runs:
   using: 'node12'
